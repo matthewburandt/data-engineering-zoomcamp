@@ -11,12 +11,6 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "amazon-ion"
-version = "0.13.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/35/61/689d4400a2f51cd2b118014b11063c6baafda3484ea5440c7cab1ec1944e/amazon.ion-0.13.0.tar.gz", hash = "sha256:18a41d3f1192e287ada981dd833af7b2d9cdc8406f3fbb1b54558b0ce36e85be", size = 796475, upload-time = "2025-01-10T23:22:19.169Z" }
-
-[[package]]
 name = "anyio"
 version = "4.12.1"
 source = { registry = "https://pypi.org/simple" }
@@ -256,15 +250,15 @@ wheels = [
 
 [[package]]
 name = "cli-helpers"
-version = "2.8.1"
+version = "2.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "configobj" },
     { name = "tabulate", extra = ["widechars"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/01/1d/bcad3ccdb558f04af6bfc5344988a189059e3be10352df1cec9843486cfe/cli_helpers-2.8.1.tar.gz", hash = "sha256:3001a7ad5644ec668b39d26b015446e63a56357863b0daebcc6bfad1c420b692", size = 40215, upload-time = "2026-01-24T19:20:35.012Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3b/a3/0eead9f2b507c8f71db89984870ae9ba2e92a01ae28dda6c1b91030cac5d/cli_helpers-2.9.0.tar.gz", hash = "sha256:a988745ec431ddae707f738dd0d13890b74a00a2aa0428eacd7fc1e03b206a17", size = 40576, upload-time = "2026-01-26T14:06:44.77Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/05/67/884dd3b1316f269e1558e3acd85e0ff3cd3283423d363b7edebe907ae6f3/cli_helpers-2.8.1-py3-none-any.whl", hash = "sha256:366ea1ddfc7d1b02091c612038c0b34b0dd3dcdbcd3f87e225ee5555816c9b3f", size = 20727, upload-time = "2026-01-24T19:20:33.521Z" },
+    { url = "https://files.pythonhosted.org/packages/ea/03/f0a1ff81271b9d90012d06c5148809fc27b4ed3fea3c052211ed566adcb6/cli_helpers-2.9.0-py3-none-any.whl", hash = "sha256:c7f124586032ebb05fd9b38b77ee793d15442610b01e72bbc7975e22cbd61919", size = 21027, upload-time = "2026-01-26T14:06:42.236Z" },
 ]
 
 [package.optional-dependencies]
@@ -816,20 +810,6 @@ wheels = [
 ]
 
 [[package]]
-name = "kestra"
-version = "1.2.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "amazon-ion" },
-    { name = "python-dateutil" },
-    { name = "requests" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/70/32/9965bf84aaa9b0afddeb8a9d9b0853d65d219ab68a8fc1e18f490146e840/kestra-1.2.0.tar.gz", hash = "sha256:29f65f9d422848c2fdbeaeb058ba1e01c22c82fe352039a1428c680cef71c1af", size = 11320, upload-time = "2026-01-13T12:36:13.554Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/bb/ac/3a76812e190d12e7c3e1238253f42f65e5735942112ef8c671c771103477/kestra-1.2.0-py3-none-any.whl", hash = "sha256:96d74c3ed5a8ec685306628dcc12f084e824efd32259db664641079cc2eb0d5f", size = 9052, upload-time = "2026-01-13T12:36:12.427Z" },
-]
-
-[[package]]
 name = "lark"
 version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
@@ -912,6 +892,41 @@ wheels = [
 ]
 
 [[package]]
+name = "movie-pipeline"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "jupyter" },
+    { name = "pandas" },
+    { name = "psycopg2-binary" },
+    { name = "pyarrow" },
+    { name = "sqlalchemy" },
+    { name = "tqdm" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "jupyter" },
+    { name = "pgcli" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "pandas", specifier = ">=3.0.0" },
+    { name = "psycopg2-binary", specifier = ">=2.9.11" },
+    { name = "pyarrow", specifier = ">=23.0.0" },
+    { name = "sqlalchemy", specifier = ">=2.0.46" },
+    { name = "tqdm", specifier = ">=4.67.1" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "pgcli", specifier = ">=4.4.0" },
+]
+
+[[package]]
 name = "nbclient"
 version = "0.10.4"
 source = { registry = "https://pypi.org/simple" }
@@ -977,7 +992,7 @@ wheels = [
 
 [[package]]
 name = "notebook"
-version = "7.5.2"
+version = "7.5.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jupyter-server" },
@@ -986,9 +1001,9 @@ dependencies = [
     { name = "notebook-shim" },
     { name = "tornado" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3b/b6/6b2c653570b02e4ec2a94c0646a4a25132be0749617776d0b72a2bcedb9b/notebook-7.5.2.tar.gz", hash = "sha256:83e82f93c199ca730313bea1bb24bc279ea96f74816d038a92d26b6b9d5f3e4a", size = 14059605, upload-time = "2026-01-12T14:56:53.483Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b8/cb/cc7f4df5cee315dd126a47eb60890690a0438d5e0dd40c32d60ce16de377/notebook-7.5.3.tar.gz", hash = "sha256:393ceb269cf9fdb02a3be607a57d7bd5c2c14604f1818a17dbeb38e04f98cbfa", size = 14073140, upload-time = "2026-01-26T07:28:36.605Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/55/b754cd51c6011d90ef03e3f06136f1ebd44658b9529dbcf0c15fc0d6a0b7/notebook-7.5.2-py3-none-any.whl", hash = "sha256:17d078a98603d70d62b6b4b3fcb67e87d7a68c398a7ae9b447eb2d7d9aec9979", size = 14468915, upload-time = "2026-01-12T14:56:47.87Z" },
+    { url = "https://files.pythonhosted.org/packages/96/98/9286e7f35e5584ebb79f997f2fb0cb66745c86f6c5fccf15ba32aac5e908/notebook-7.5.3-py3-none-any.whl", hash = "sha256:c997bfa1a2a9eb58c9bbb7e77d50428befb1033dd6f02c482922e96851d67354", size = 14481744, upload-time = "2026-01-26T07:28:31.867Z" },
 ]
 
 [[package]]
@@ -1170,41 +1185,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/12/b3/f342d6a9ec37fddff8c30b4f6eb5e83990f5d33135cecf381d3f7a0c1c9c/pgspecial-2.2.1.tar.gz", hash = "sha256:da6c7fcc7bef7bb0132dc2046f74ec6513b1fe6f0c80e5528d630d14b7c4849d", size = 50389, upload-time = "2025-04-28T03:56:04.334Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/84/9f/151c714d38f893d31688c9454646a078a8d884d9d8d39e3b281178f4d8b9/pgspecial-2.2.1-py3-none-any.whl", hash = "sha256:08d86faaf360603a25850e259efc083bded4c1e8ffd2cfe2950b8ceefdfb4c9c", size = 35758, upload-time = "2025-04-28T03:56:03.057Z" },
-]
-
-[[package]]
-name = "pipeline"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "kestra" },
-    { name = "pandas" },
-    { name = "psycopg2-binary" },
-    { name = "pyarrow" },
-    { name = "sqlalchemy" },
-    { name = "tqdm" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "jupyter" },
-    { name = "pgcli" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "kestra", specifier = ">=1.2.0" },
-    { name = "pandas", specifier = ">=3.0.0" },
-    { name = "psycopg2-binary", specifier = ">=2.9.11" },
-    { name = "pyarrow", specifier = ">=23.0.0" },
-    { name = "sqlalchemy", specifier = ">=2.0.46" },
-    { name = "tqdm", specifier = ">=4.67.1" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "jupyter", specifier = ">=1.1.1" },
-    { name = "pgcli", specifier = ">=4.4.0" },
 ]
 
 [[package]]
@@ -1678,11 +1658,11 @@ wheels = [
 
 [[package]]
 name = "setuptools"
-version = "80.10.1"
+version = "80.10.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/86/ff/f75651350db3cf2ef767371307eb163f3cc1ac03e16fdf3ac347607f7edb/setuptools-80.10.1.tar.gz", hash = "sha256:bf2e513eb8144c3298a3bd28ab1a5edb739131ec5c22e045ff93cd7f5319703a", size = 1229650, upload-time = "2026-01-21T09:42:03.061Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/76/95/faf61eb8363f26aa7e1d762267a8d602a1b26d4f3a1e758e92cb3cb8b054/setuptools-80.10.2.tar.gz", hash = "sha256:8b0e9d10c784bf7d262c4e5ec5d4ec94127ce206e8738f29a437945fbc219b70", size = 1200343, upload-time = "2026-01-25T22:38:17.252Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e0/76/f963c61683a39084aa575f98089253e1e852a4417cb8a3a8a422923a5246/setuptools-80.10.1-py3-none-any.whl", hash = "sha256:fc30c51cbcb8199a219c12cc9c281b5925a4978d212f84229c909636d9f6984e", size = 1099859, upload-time = "2026-01-21T09:42:00.688Z" },
+    { url = "https://files.pythonhosted.org/packages/94/b8/f1f62a5e3c0ad2ff1d189590bfa4c46b4f3b6e49cef6f26c6ee4e575394d/setuptools-80.10.2-py3-none-any.whl", hash = "sha256:95b30ddfb717250edb492926c92b5221f7ef3fbcc2b07579bcd4a27da21d0173", size = 1064234, upload-time = "2026-01-25T22:38:15.216Z" },
 ]
 
 [[package]]
@@ -1891,11 +1871,11 @@ wheels = [
 
 [[package]]
 name = "wcwidth"
-version = "0.3.3"
+version = "0.5.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/b5/3a/c63d2afd6dc2cad55a44bea48c7db75edde859e320bdceb9351ba63fceb6/wcwidth-0.3.3.tar.gz", hash = "sha256:f8f7d42c8a067d909b80b425342d02c423c5edc546347475e1d402fe3d35bb63", size = 233784, upload-time = "2026-01-24T16:23:58.578Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/64/6e/62daec357285b927e82263a81f3b4c1790215bc77c42530ce4a69d501a43/wcwidth-0.5.0.tar.gz", hash = "sha256:f89c103c949a693bf563377b2153082bf58e309919dfb7f27b04d862a0089333", size = 246585, upload-time = "2026-01-27T01:31:44.942Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4f/bc/ab575ebf0254577034d23908299b0d13ea5d7ceb35f43a5c08acf2252826/wcwidth-0.3.3-py3-none-any.whl", hash = "sha256:8e9056c446f21c7393514946d143a748c56aad72476844d3f215f7915276508f", size = 86509, upload-time = "2026-01-24T16:23:56.966Z" },
+    { url = "https://files.pythonhosted.org/packages/f2/3e/45583b67c2ff08ad5a582d316fcb2f11d6cf0a50c7707ac09d212d25bc98/wcwidth-0.5.0-py3-none-any.whl", hash = "sha256:1efe1361b83b0ff7877b81ba57c8562c99cf812158b778988ce17ec061095695", size = 93772, upload-time = "2026-01-27T01:31:43.432Z" },
 ]
 
 [[package]]

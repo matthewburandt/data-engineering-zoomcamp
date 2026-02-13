@@ -53,6 +53,16 @@ docker run -it \
   --name pgdatabase \
   postgres:18
 
+  docker run -it \
+  -e POSTGRES_USER="movie_user" \
+  -e POSTGRES_PASSWORD="movie_pass" \
+  -e POSTGRES_DB="movies" \
+  -v movie_ratings:/var/lib/postgresql \
+  -p 5432:5432 \
+  --network=movie-network \
+  --name moviedb \
+  postgres:18
+
 # In another terminal, run pgAdmin on the same network
 docker run -it \
   -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
@@ -61,6 +71,15 @@ docker run -it \
   -p 8085:80 \
   --network=pg-network \
   --name pgadmin \
+  dpage/pgadmin4
+
+  docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@movies.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="admin123" \
+  -v movie_pg_admin_data:/var/lib/pgadmin \
+  -p 8080:80 \
+  --network=movie-network \
+  --name movieadmin \
   dpage/pgadmin4
 ```
 

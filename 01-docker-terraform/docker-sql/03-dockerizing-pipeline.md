@@ -81,3 +81,15 @@ ENTRYPOINT ["uv", "run", "python", "pipeline.py"]
 ```
 
 **[↑ Up](README.md)** | **[← Previous](02-virtual-environment.md)** | **[Next →](04-postgres-docker.md)**
+
+docker run -it --rm \
+  --network=movie-network \
+  -v $(pwd)/data:/app/data \
+  movie-generator:v1 \
+    --csv-path=/app/data/movie_ratings.csv \
+    --pg-host=moviedb \
+    --pg-port=5432 \
+    --pg-user=movie_user \
+    --pg-password=movie_pass \
+    --pg-db=movies \
+    --table-name=movie-ratings
