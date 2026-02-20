@@ -1,0 +1,302 @@
+==================== 2026-02-20T03:34:30.600260Z | b10e275c-739c-4665-9c0a-47d17d489b5d ====================
+03:34:30.600294 [info ]: Starting dbt LSP server
+03:34:30.600309 [info ]: Connecting to LSP client on port 44883
+03:34:30.600443 [info ]: Successfully connected to LSP client
+03:34:30.600451 [info ]: Creating LSP service...
+03:34:30.648694 [info ]: Creating LSP server...
+03:34:30.648720 [info ]: Starting LSP server...
+03:34:30.912980 [info ]: Started loading project
+03:34:30.914576 [info ]: Loading profiles.yml
+03:34:30.928017 [debug]:    Started loading packages
+03:34:30.928759 [debug]:     Loaded [  0.00s] packages
+03:34:30.928781 [debug]:    Started loading internal packages
+03:34:30.931011 [debug]:     Loaded [  0.00s] internal packages
+03:34:30.931278 [info ]: Started parsing
+03:34:30.958396 [info ]: Finished loading project [  0.05s]
+03:34:30.959974 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+03:34:30.961395 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+03:34:30.963735 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+03:34:30.964174 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+03:34:30.964561 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+03:34:30.964887 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+03:34:30.966382 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+03:34:30.966664 [info ]: Finished parsing [  0.04s]
+03:34:30.966758 [info ]: Cached model count updated: 2 models (estimate)
+03:34:30.966768 [info ]: Cached model count updated: 2 models (accurate)
+03:34:30.966810 [info ]: Started scheduling
+03:34:30.966893 [info ]: Finished scheduling [  0.00s]
+03:34:30.966913 [info ]: Started scheduling
+03:34:30.966939 [info ]: Finished scheduling [  0.00s]
+03:34:30.968245 [info ]: Started downloading schemas
+03:34:30.968272 [debug]:    Started downloading relations
+03:34:30.968309 [debug]:   Finished [  0.00s] downloading relations
+03:34:30.968322 [info ]: Finished downloading schemas [  0.00s]
+03:34:31.074816 [info ]: Started building task graph
+03:34:31.074979 [info ]: Finished building task graph [  0.00s]
+03:34:31.075205 [info ]: Started rendering (2 nodes)
+03:34:31.075239 [info ]: Started model dbt_matthewburandt.my_first_dbt_model
+03:34:31.075261 [debug]: Started rendering model dbt_matthewburandt.my_first_dbt_model
+03:34:31.076183 [debug]: Compiled SQL for node model.my_new_project.my_first_dbt_model at target/compiled/models/example/my_first_dbt_model.sql
+03:34:31.076246 [debug]: Finished rendering [  0.00s] model dbt_matthewburandt.my_first_dbt_model [success]
+03:34:31.076275 [info ]: Started analyzing (2 nodes)
+03:34:31.076288 [debug]: Started analyzing model dbt_matthewburandt.my_first_dbt_model
+03:34:31.091611 [info ]:  Succeeded [  0.01s] model dbt_matthewburandt.my_first_dbt_model (table)
+03:34:31.091643 [debug]: Finished analyzing [  0.02s] model dbt_matthewburandt.my_first_dbt_model [success]
+03:34:31.091660 [info ]: Started model dbt_matthewburandt.my_second_dbt_model
+03:34:31.091673 [debug]: Started rendering model dbt_matthewburandt.my_second_dbt_model
+03:34:31.092377 [debug]: Compiled SQL for node model.my_new_project.my_second_dbt_model at target/compiled/models/example/my_second_dbt_model.sql
+03:34:31.092499 [debug]: Finished rendering [  0.00s] model dbt_matthewburandt.my_second_dbt_model [success]
+03:34:31.092520 [info ]: Finished rendering [  0.02s] (2 nodes, 0 skipped, 0 errors)
+03:34:31.092549 [debug]: Started analyzing model dbt_matthewburandt.my_second_dbt_model
+03:34:31.096669 [info ]:  Succeeded [  0.00s] model dbt_matthewburandt.my_second_dbt_model (table)
+03:34:31.096697 [debug]: Finished analyzing [  0.00s] model dbt_matthewburandt.my_second_dbt_model [success]
+03:34:31.096706 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+03:34:31.099537 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-02-20T03:43:45.968749Z | 119ab6a5-392d-4c84-be9f-b890dd533e15 ====================
+03:43:45.968788 [info ]: Starting dbt LSP server
+03:43:45.968799 [info ]: Connecting to LSP client on port 35691
+03:43:45.968963 [info ]: Successfully connected to LSP client
+03:43:45.968971 [info ]: Creating LSP service...
+03:43:46.018064 [info ]: Creating LSP server...
+03:43:46.018091 [info ]: Starting LSP server...
+03:43:46.288204 [info ]: Started loading project
+03:43:46.289758 [info ]: Loading profiles.yml
+03:43:46.298903 [debug]:    Started loading packages
+03:43:46.299605 [debug]:     Loaded [  0.00s] packages
+03:43:46.299627 [debug]:    Started loading internal packages
+03:43:46.301688 [debug]:     Loaded [  0.00s] internal packages
+03:43:46.301959 [info ]: Started parsing
+03:43:46.327912 [info ]: Finished loading project [  0.04s]
+03:43:46.329505 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+03:43:46.331778 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+03:43:46.334170 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+03:43:46.334621 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+03:43:46.335072 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+03:43:46.335474 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+03:43:46.337086 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+03:43:46.337507 [info ]: Finished parsing [  0.04s]
+03:43:46.337604 [info ]: Cached model count updated: 2 models (estimate)
+03:43:46.337615 [info ]: Cached model count updated: 2 models (accurate)
+03:43:46.337662 [info ]: Started scheduling
+03:43:46.337734 [info ]: Finished scheduling [  0.00s]
+03:43:46.337749 [info ]: Started scheduling
+03:43:46.337768 [info ]: Finished scheduling [  0.00s]
+03:43:46.339041 [info ]: Started downloading schemas
+03:43:46.339066 [debug]:    Started downloading relations
+03:43:46.339107 [debug]:   Finished [  0.00s] downloading relations
+03:43:46.339120 [info ]: Finished downloading schemas [  0.00s]
+03:43:46.468649 [info ]: Started building task graph
+03:43:46.468783 [info ]: Finished building task graph [  0.00s]
+03:43:46.468944 [info ]: Started rendering (2 nodes)
+03:43:46.468965 [info ]: Started model dbt_matthewburandt.my_first_dbt_model
+03:43:46.468985 [debug]: Started rendering model dbt_matthewburandt.my_first_dbt_model
+03:43:46.469805 [debug]: Compiled SQL for node model.my_new_project.my_first_dbt_model at target/compiled/models/example/my_first_dbt_model.sql
+03:43:46.469878 [info ]: Started analyzing (2 nodes)
+03:43:46.469876 [debug]: Finished rendering [  0.00s] model dbt_matthewburandt.my_first_dbt_model [success]
+03:43:46.469891 [debug]: Started analyzing model dbt_matthewburandt.my_first_dbt_model
+03:43:46.485206 [info ]:  Succeeded [  0.01s] model dbt_matthewburandt.my_first_dbt_model (table)
+03:43:46.485237 [debug]: Finished analyzing [  0.02s] model dbt_matthewburandt.my_first_dbt_model [success]
+03:43:46.485264 [info ]: Started model dbt_matthewburandt.my_second_dbt_model
+03:43:46.485276 [debug]: Started rendering model dbt_matthewburandt.my_second_dbt_model
+03:43:46.485854 [debug]: Compiled SQL for node model.my_new_project.my_second_dbt_model at target/compiled/models/example/my_second_dbt_model.sql
+03:43:46.485904 [debug]: Finished rendering [  0.00s] model dbt_matthewburandt.my_second_dbt_model [success]
+03:43:46.485906 [debug]: Started analyzing model dbt_matthewburandt.my_second_dbt_model
+03:43:46.485921 [info ]: Finished rendering [  0.02s] (2 nodes, 0 skipped, 0 errors)
+03:43:46.489837 [info ]:  Succeeded [  0.00s] model dbt_matthewburandt.my_second_dbt_model (table)
+03:43:46.489863 [debug]: Finished analyzing [  0.00s] model dbt_matthewburandt.my_second_dbt_model [success]
+03:43:46.489869 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+03:43:46.492498 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-02-20T03:44:05.040085Z | bcaeb8fc-24bb-4433-9901-5860050dc87a ====================
+03:44:05.040122 [info ]: Starting dbt LSP server
+03:44:05.040135 [info ]: Connecting to LSP client on port 53967
+03:44:05.040271 [info ]: Successfully connected to LSP client
+03:44:05.040278 [info ]: Creating LSP service...
+03:44:05.089613 [info ]: Creating LSP server...
+03:44:05.089647 [info ]: Starting LSP server...
+03:44:05.352922 [info ]: Started loading project
+03:44:05.354569 [info ]: Loading profiles.yml
+03:44:05.363516 [debug]:    Started loading packages
+03:44:05.364199 [debug]:     Loaded [  0.00s] packages
+03:44:05.364220 [debug]:    Started loading internal packages
+03:44:05.366292 [debug]:     Loaded [  0.00s] internal packages
+03:44:05.366566 [info ]: Started parsing
+03:44:05.391908 [info ]: Finished loading project [  0.04s]
+03:44:05.393534 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+03:44:05.396352 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+03:44:05.398970 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+03:44:05.399601 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+03:44:05.400121 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+03:44:05.400490 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+03:44:05.402232 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+03:44:05.402534 [info ]: Finished parsing [  0.04s]
+03:44:05.402663 [info ]: Cached model count updated: 2 models (estimate)
+03:44:05.402676 [info ]: Cached model count updated: 2 models (accurate)
+03:44:05.402712 [info ]: Started scheduling
+03:44:05.402815 [info ]: Finished scheduling [  0.00s]
+03:44:05.402834 [info ]: Started scheduling
+03:44:05.402855 [info ]: Finished scheduling [  0.00s]
+03:44:05.404186 [info ]: Started downloading schemas
+03:44:05.404211 [debug]:    Started downloading relations
+03:44:05.404265 [debug]:   Finished [  0.00s] downloading relations
+03:44:05.404279 [info ]: Finished downloading schemas [  0.00s]
+03:44:05.513643 [info ]: Started building task graph
+03:44:05.513778 [info ]: Finished building task graph [  0.00s]
+03:44:05.513937 [info ]: Started rendering (2 nodes)
+03:44:05.513960 [info ]: Started model dbt_matthewburandt.my_first_dbt_model
+03:44:05.513978 [debug]: Started rendering model dbt_matthewburandt.my_first_dbt_model
+03:44:05.514702 [debug]: Compiled SQL for node model.my_new_project.my_first_dbt_model at target/compiled/models/example/my_first_dbt_model.sql
+03:44:05.514754 [info ]: Started analyzing (2 nodes)
+03:44:05.514763 [debug]: Started analyzing model dbt_matthewburandt.my_first_dbt_model
+03:44:05.514760 [debug]: Finished rendering [  0.00s] model dbt_matthewburandt.my_first_dbt_model [success]
+03:44:05.529871 [info ]:  Succeeded [  0.01s] model dbt_matthewburandt.my_first_dbt_model (table)
+03:44:05.529902 [debug]: Finished analyzing [  0.02s] model dbt_matthewburandt.my_first_dbt_model [success]
+03:44:05.529919 [info ]: Started model dbt_matthewburandt.my_second_dbt_model
+03:44:05.529930 [debug]: Started rendering model dbt_matthewburandt.my_second_dbt_model
+03:44:05.530471 [debug]: Compiled SQL for node model.my_new_project.my_second_dbt_model at target/compiled/models/example/my_second_dbt_model.sql
+03:44:05.530522 [debug]: Finished rendering [  0.00s] model dbt_matthewburandt.my_second_dbt_model [success]
+03:44:05.530535 [info ]: Finished rendering [  0.02s] (2 nodes, 0 skipped, 0 errors)
+03:44:05.530548 [debug]: Started analyzing model dbt_matthewburandt.my_second_dbt_model
+03:44:05.534424 [info ]:  Succeeded [  0.00s] model dbt_matthewburandt.my_second_dbt_model (table)
+03:44:05.534450 [debug]: Finished analyzing [  0.00s] model dbt_matthewburandt.my_second_dbt_model [success]
+03:44:05.534456 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+03:44:05.537264 [info ]: Cached model count updated: 2 models (accurate)
+03:45:16.773434 [info ]: Started loading project
+03:45:16.773754 [info ]: Loading profiles.yml
+03:45:16.777319 [info ]: Started parsing
+03:45:16.796628 [info ]: Finished loading project [  0.02s]
+03:45:16.798388 [info ]: Finished parsing [  0.02s]
+03:45:16.799088 [info ]: Cached model count updated: 2 models (estimate)
+03:45:16.799102 [info ]: Cached model count updated: 2 models (accurate)
+03:45:16.799120 [info ]: Started scheduling
+03:45:16.799152 [info ]: Finished scheduling [  0.00s]
+03:45:16.799166 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+03:45:16.799182 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+03:45:16.799868 [info ]: Started downloading schemas
+03:45:16.799892 [debug]:    Started downloading relations
+03:45:16.799915 [debug]:   Finished [  0.00s] downloading relations
+03:45:16.799928 [info ]: Finished downloading schemas [  0.00s]
+03:45:16.908097 [info ]: Started building task graph
+03:45:16.908145 [info ]: Finished building task graph [  0.00s]
+03:45:16.908305 [debug]: Incremental compilation - 0 nodes selected: {}
+03:45:16.912682 [info ]: Cached model count updated: 2 models (accurate)
+03:45:17.693532 [info ]: Started loading project
+03:45:17.693864 [info ]: Loading profiles.yml
+03:45:17.697409 [info ]: Started parsing
+03:45:17.713222 [info ]: Finished loading project [  0.02s]
+03:45:17.714939 [info ]: Finished parsing [  0.02s]
+03:45:17.715720 [info ]: Cached model count updated: 2 models (estimate)
+03:45:17.715735 [info ]: Cached model count updated: 2 models (accurate)
+03:45:17.715753 [info ]: Started scheduling
+03:45:17.715798 [info ]: Finished scheduling [  0.00s]
+03:45:17.715814 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+03:45:17.715819 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+03:45:17.716516 [info ]: Started downloading schemas
+03:45:17.716542 [debug]:    Started downloading relations
+03:45:17.716564 [debug]:   Finished [  0.00s] downloading relations
+03:45:17.716578 [info ]: Finished downloading schemas [  0.00s]
+03:45:17.823601 [info ]: Started building task graph
+03:45:17.823649 [info ]: Finished building task graph [  0.00s]
+03:45:17.823811 [debug]: Incremental compilation - 0 nodes selected: {}
+03:45:17.828433 [info ]: Cached model count updated: 2 models (accurate)
+03:45:45.233976 [info ]: Started loading project
+03:45:45.234305 [info ]: Loading profiles.yml
+03:45:45.238096 [info ]: Started parsing
+03:45:45.253710 [info ]: Finished loading project [  0.02s]
+03:45:45.255404 [info ]: Finished parsing [  0.02s]
+03:45:45.256202 [info ]: Cached model count updated: 2 models (estimate)
+03:45:45.256217 [info ]: Cached model count updated: 2 models (accurate)
+03:45:45.256236 [info ]: Started scheduling
+03:45:45.256269 [info ]: Finished scheduling [  0.00s]
+03:45:45.256283 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+03:45:45.256292 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+03:45:45.256999 [info ]: Started downloading schemas
+03:45:45.257024 [debug]:    Started downloading relations
+03:45:45.257046 [debug]:   Finished [  0.00s] downloading relations
+03:45:45.257060 [info ]: Finished downloading schemas [  0.00s]
+03:45:45.363455 [info ]: Started building task graph
+03:45:45.363504 [info ]: Finished building task graph [  0.00s]
+03:45:45.363674 [debug]: Incremental compilation - 0 nodes selected: {}
+03:45:45.368720 [info ]: Cached model count updated: 2 models (accurate)
+03:45:46.474604 [info ]: Started loading project
+03:45:46.474914 [info ]: Loading profiles.yml
+03:45:46.478480 [info ]: Started parsing
+03:45:46.494122 [info ]: Finished loading project [  0.02s]
+03:45:46.495973 [info ]: Finished parsing [  0.02s]
+03:45:46.496782 [info ]: Cached model count updated: 2 models (estimate)
+03:45:46.496797 [info ]: Cached model count updated: 2 models (accurate)
+03:45:46.496815 [info ]: Started scheduling
+03:45:46.496849 [info ]: Finished scheduling [  0.00s]
+03:45:46.496863 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+03:45:46.496872 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+03:45:46.497556 [info ]: Started downloading schemas
+03:45:46.497581 [debug]:    Started downloading relations
+03:45:46.497604 [debug]:   Finished [  0.00s] downloading relations
+03:45:46.497630 [info ]: Finished downloading schemas [  0.00s]
+03:45:46.614444 [info ]: Started building task graph
+03:45:46.614493 [info ]: Finished building task graph [  0.00s]
+03:45:46.614677 [debug]: Incremental compilation - 0 nodes selected: {}
+03:45:46.619730 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-02-20T03:54:51.267584Z | 9be09c9b-a031-487d-9bc2-6013dff7f4d6 ====================
+03:54:51.267625 [info ]: Starting dbt LSP server
+03:54:51.267637 [info ]: Connecting to LSP client on port 45357
+03:54:51.267797 [info ]: Successfully connected to LSP client
+03:54:51.267805 [info ]: Creating LSP service...
+03:54:51.317237 [info ]: Creating LSP server...
+03:54:51.317267 [info ]: Starting LSP server...
+03:54:51.646684 [info ]: Started loading project
+03:54:51.648276 [info ]: Loading profiles.yml
+03:54:51.657651 [debug]:    Started loading packages
+03:54:51.658414 [debug]:     Loaded [  0.00s] packages
+03:54:51.658437 [debug]:    Started loading internal packages
+03:54:51.660630 [debug]:     Loaded [  0.00s] internal packages
+03:54:51.660941 [info ]: Started parsing
+03:54:51.687506 [info ]: Finished loading project [  0.04s]
+03:54:51.689152 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+03:54:51.690695 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+03:54:51.693282 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+03:54:51.693759 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+03:54:51.694286 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+03:54:51.694773 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+03:54:51.696225 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+03:54:51.696646 [info ]: Finished parsing [  0.04s]
+03:54:51.696754 [info ]: Cached model count updated: 2 models (estimate)
+03:54:51.696766 [info ]: Cached model count updated: 2 models (accurate)
+03:54:51.696810 [info ]: Started scheduling
+03:54:51.696878 [info ]: Finished scheduling [  0.00s]
+03:54:51.696892 [info ]: Started scheduling
+03:54:51.696910 [info ]: Finished scheduling [  0.00s]
+03:54:51.698444 [info ]: Started downloading schemas
+03:54:51.698473 [debug]:    Started downloading relations
+03:54:51.698518 [debug]:   Finished [  0.00s] downloading relations
+03:54:51.698531 [info ]: Finished downloading schemas [  0.00s]
+03:54:51.808750 [info ]: Started building task graph
+03:54:51.808895 [info ]: Finished building task graph [  0.00s]
+03:54:51.809091 [info ]: Started rendering (2 nodes)
+03:54:51.809116 [info ]: Started model dbt_matthewburandt.my_first_dbt_model
+03:54:51.809133 [debug]: Started rendering model dbt_matthewburandt.my_first_dbt_model
+03:54:51.809970 [debug]: Compiled SQL for node model.my_new_project.my_first_dbt_model at target/compiled/models/example/my_first_dbt_model.sql
+03:54:51.810037 [debug]: Finished rendering [  0.00s] model dbt_matthewburandt.my_first_dbt_model [success]
+03:54:51.810087 [info ]: Started analyzing (2 nodes)
+03:54:51.810099 [debug]: Started analyzing model dbt_matthewburandt.my_first_dbt_model
+03:54:51.825789 [info ]:  Succeeded [  0.01s] model dbt_matthewburandt.my_first_dbt_model (table)
+03:54:51.825831 [debug]: Finished analyzing [  0.02s] model dbt_matthewburandt.my_first_dbt_model [success]
+03:54:51.825858 [info ]: Started model dbt_matthewburandt.my_second_dbt_model
+03:54:51.825877 [debug]: Started rendering model dbt_matthewburandt.my_second_dbt_model
+03:54:51.826619 [debug]: Compiled SQL for node model.my_new_project.my_second_dbt_model at target/compiled/models/example/my_second_dbt_model.sql
+03:54:51.826672 [debug]: Started analyzing model dbt_matthewburandt.my_second_dbt_model
+03:54:51.826690 [debug]: Finished rendering [  0.00s] model dbt_matthewburandt.my_second_dbt_model [success]
+03:54:51.826714 [info ]: Finished rendering [  0.02s] (2 nodes, 0 skipped, 0 errors)
+03:54:51.830806 [info ]:  Succeeded [  0.00s] model dbt_matthewburandt.my_second_dbt_model (table)
+03:54:51.830846 [debug]: Finished analyzing [  0.00s] model dbt_matthewburandt.my_second_dbt_model [success]
+03:54:51.830856 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+03:54:51.834200 [info ]: Cached model count updated: 2 models (accurate)
+04:02:48.853499 [info ]: Loading profiles.yml
+==================== 2026-02-20T04:06:26.582900Z | d47be4d8-8248-4fa9-a7c6-6113fe1d91ea ====================
+04:06:26.582939 [info ]: Starting dbt LSP server
+04:06:26.582950 [info ]: Connecting to LSP client on port 33925
+04:06:26.583108 [info ]: Successfully connected to LSP client
+04:06:26.583116 [info ]: Creating LSP service...
+04:06:26.632586 [info ]: Creating LSP server...
+04:06:26.632613 [info ]: Starting LSP server...
+04:06:26.922893 [info ]: Started loading project
+04:06:26.922992 [info ]: Finished loading project [  0.00s]

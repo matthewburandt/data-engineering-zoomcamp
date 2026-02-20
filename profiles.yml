@@ -1,0 +1,82 @@
+user:
+  outputs:
+    default:
+      keyfile_json:
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        client_email: matt-zoomcamp@dataengineeringzoomcamp-487103.iam.gserviceaccount.com
+        client_id: '101337358432358122624'
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/matt-zoomcamp%40dataengineeringzoomcamp-487103.iam.gserviceaccount.com
+        private_key: '-----BEGIN PRIVATE KEY-----
+
+          MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCVjNHlsJcIuswm
+
+          FP+YfhWprS14gzbZ5YpULdSPQMVdWpe98TrPVYdc0i8NjibhtG0oPzPbTuf0jBUS
+
+          qv3q/Oqv8jh7L/B/kRyxTShHWu5LOw3A8QefV4Ee8idrZluFha0sj1l4rk+UiIIl
+
+          SWls79FpZxnPhQ5zZYNsBP/8xrOSuzl/TdH1SWaB6Z1itSL0pXy5f86ht6AyaXYY
+
+          a+eBVTE6abOfXjXaATbajmotHPyg4ct6YAweNYHmGTY+W2Lpo9kgZddmuJWs+IcA
+
+          1ug8Gksg9Jfzl+T9CISBKKQIzOxpCy8JD+zwvqfl+Z3XMyoV73LmCDzjg+F7J65O
+
+          XMpfF31jAgMBAAECggEAAjhmAV/+zg1f7IzRQqVUkwFUNH7WOKP0ys0nY70VcQ5g
+
+          RFypf9yINvOT6UKcByvTlw5hKbdhMDtIMM/DF1ML9PLGreWHT42K/ILlvzF1aj6F
+
+          NMEfWNlGvHvh4/FQGIpkiM3UCTulSNJCBGWzn/9rf4IdWvxhu4rdSaRFXK5iiiIh
+
+          p/FCodAcxIye1VCzkDjNWDleanJsnn08Zpe1p3PbKnAMI9mU4JrDk3YItY6z4mgc
+
+          NpA+zn9ntUuFAhankHGsyc8zfMwOBVHvd4uwSdpPNJn4cqOFl2uiOMwFCmdrLzGw
+
+          QCLxcS8yjb50d0cs5FvkeOgHIKiLH1Dbb35P3OsraQKBgQDF87+oHu0S83j9apNB
+
+          5FPCt4DrbdysLqdeROfDHYCWPgTvdnprK1p/QCcokRutJO3xMFMUCC3mf2tbRSbf
+
+          1Ry+fJ/VTvXhTt67/JqrpLxRub1LngQBLl4wJjinJAvBk8sCmb/fNrp7QhbRo/x1
+
+          rHls+dplRYFe2XeEdzVv9NvXHwKBgQDBZ4g5V1lHiureFCTOI/Szr7g1E4kcStWX
+
+          eggnxIS45wavqiWjsaPGinTklADuXr/bsM26D6jV45fwH/haRe2nRdki+zPjGffo
+
+          nuY+0Re1zxiAiBoDIb81dXKHs27slEwozCMseenu04Fk3toMJeZpsRy7SNnJcYuo
+
+          TRc1yGplPQKBgAuXsLupw/x+IbHFkgYj1vvqPzSKZIf423hb1K7KhYNG8ocLizPH
+
+          gC8/lIt9o/9J0F11lQfxSq7a+3CG5jXphxtotPuK+j9NnSGpM22l4hlvJTTOdjGT
+
+          g5SSSHMRW1bkztjCJEhwLg+V2TxBvEEv7pSBNVcE8QSa+7LYQFrkHhPFAoGARUnJ
+
+          JPnlM1tSb4N5+Bwrk6BVdzZrfaZVxTHj8BNYlUG3RIHJgE6o5P0/iZB4kO2DALrj
+
+          yU/I5e/mxBFAEV9SGAZPF1g1q5vnFACxbjnMq8bo+UtJPmv9q7JK+NDQ4ZLzgf44
+
+          b7uxkm1VwwSPy6BcXusj5vjfhWrXZNFRimQlseUCgYA4lyR2zL4CIsYrS+cTzZMg
+
+          /dXhYwdizVHzBUShyXUSTx77Zc6Axxz04vWb1cq9R5FNtu3VU6BRv+GI6Fd6XLFN
+
+          GoYVkQCb4+Vcs7GvVjezQ8gsZM17ik+gmD3FZqFpAs63KVg/P+JLD/MQtTlZ3yZO
+
+          nXw6e1LpEMjdwOmX9HedGw==
+
+          -----END PRIVATE KEY-----
+
+          '
+        private_key_id: 4e333f4501762744df7b63e2fa61851e551969eb
+        project_id: dataengineeringzoomcamp-487103
+        token_uri: https://oauth2.googleapis.com/token
+        type: service_account
+      method: service-account-json
+      project: dataengineeringzoomcamp-487103
+      schema: dbt_matthewburandt
+      scopes:
+      - https://www.googleapis.com/auth/bigquery
+      - https://www.googleapis.com/auth/cloud-platform
+      - https://www.googleapis.com/auth/drive
+      - https://www.googleapis.com/auth/userinfo.email
+      target_name: default
+      threads: 6
+      type: bigquery
+  target: default
