@@ -70,7 +70,7 @@ user:
         type: service_account
       method: service-account-json
       project: dataengineeringzoomcamp-487103
-      schema: dbt_matthewburandt
+      schema: zoomcamp
       scopes:
       - https://www.googleapis.com/auth/bigquery
       - https://www.googleapis.com/auth/cloud-platform
@@ -79,4 +79,5 @@ user:
       target_name: default
       threads: 6
       type: bigquery
+      location: us-central1
   target: default
