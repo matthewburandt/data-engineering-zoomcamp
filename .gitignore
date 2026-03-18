@@ -24,3 +24,9 @@ dbt_packages/
 logs/
 # end dbt Cloud content
 dbt_internal_packages/
+
+.bruin.yml
+logs/runs
+logs/*.log
+__pycache__/
+*.py[cod]

@@ -1,0 +1,14 @@
+version: "1"
+context:
+  active-host: "hc033.us1.dbt.com"
+  active-project: "70471823554550"
+projects:
+  - project-name: "taxi_rides_ny"
+    project-id: "70471823554550"
+    account-name: "Matthew's dbt Cloud Account"
+    account-id: "70471823534843"
+    account-host: "hc033.us1.dbt.com"
+    token-name: "cloud-cli-f8ca"
+    token-value: "dbtu_HvtjX-kN88shroEF94lG_h_ler7c5ShGZGTT1S_kJW7pSobOw0"
+
+
