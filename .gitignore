@@ -30,3 +30,5 @@ logs/runs
 logs/*.log
 __pycache__/
 *.py[cod]
+
+service-account.json
